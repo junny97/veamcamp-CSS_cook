@@ -1,0 +1,40 @@
+body{
+    background-image: url(./images/bg.png) ;
+   
+}
+.wrap{
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+   
+}
+
+h1,p{
+    color: white;
+}
+
+.animal-img
+, .sub-img{
+    vertical-align: bottom;
+    
+}
+
+h1{
+    padding-left: 15px;
+   
+}
+p{
+    padding: 0px 15px 10px;
+    line-height: 130%;
+}
+
+.text{
+    padding-top: 3px;
+    border-radius: 0 0 10px 10px;
+    width: 300px;
+ 
+    background-color: #93572e;
+}
