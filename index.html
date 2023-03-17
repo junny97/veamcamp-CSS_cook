@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flexing</title>
+        <style>
+            body {
+                background-color: brown;
+            }
+            .playground {
+                border: 10px solid maroon;
+                width: 980px;
+                height: 400px;
+                margin: 0 auto;
+                border-radius: 20px;
+                background-color: skyblue;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                /*플렉스 아이템이 하나라도 커지거나 부모가 커지면 자식들도 다같이 커진다 왜?
+                => align-items: stretch;를 기본값으로 가지고 있어서다
+                 자식을 설정하고 싶다면 strech가 아ㅏ닌 값으로 바꾸어 줘야 된다 */
+              
+                
+            }
+            .frog {
+                background-color: mediumseagreen;
+                color: lime;
+                font-size: 40px;
+                /* margin: auto 10px; */
+                border: 6px solid green;
+                border-radius: 10px;
+                flex-basis: 200px; /*컨텐츠의 크기만큼 가진다 */
+                min-width: 0; 
+                /*내부 자식 컨텐츠 크기만큼으로 auto로 가지고 있다 0으로 설정하면
+                공간이 모자라더라도 줄어들 수 있다 */
+                
+                
+                
+            }
+            .frog.sun{
+               margin-top: auto;
+               /*  margin-top: auto;
+               margin-bottom: auto; 
+               align-items: center;와 똑같은 뜻  */
+            }
+           
+        </style>
+    </head>
+    <body>
+
+        <div class="playground">
+            <div class="frog"><img src="images/frog-cry.png" alt=""></div>
+            <div class="frog"><img src="images/frog-disco.png" alt=""></div>
+            <div class="frog"><img src="images/frog-eat.png" alt=""></div>
+            <div class="frog"><img src="images/frog-eat.png" alt=""></div>
+            <div class="frog sun"><img src="images/frog-eat.png" alt=""></div>
+            <div class="frog"><img src="images/frog-disco.png" alt=""></div>
+        </div>
+
+    </body>
+</html>
+
+
+<!-- min width를 0으로 쓰면 내부 컨텐츠 값을 넘어가더라도 넘치지 않게 할 수 있다 -->
